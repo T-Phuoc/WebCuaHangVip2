@@ -1,0 +1,26 @@
+<div id="container">
+
+  <div class="left-navbar">
+    <h1 class="logo" [routerLink]="['/home']">CatTiny</h1>
+
+    <div id="button-menu">
+      <button [routerLink]="['/home']"> trang chủ</button>
+      <button [routerLink]="['/products']"> sản phẩm</button>
+      <button [routerLink]="['/cart']"> giỏ hàng</button>
+    </div>
+  </div>
+
+  <div class="right-navbar">
+
+  <div id="button-login">
+    <button (click)="auth.login()" > sign in</button>
+      @if (auth.currentUser){
+        <button (click)="auth.logout()" > sign out</button>
+      }
+  </div>
+    @if (auth.currentUser){
+      <img id="avata-user" [src]="auth.currentUser.photoURL" alt="" />
+    }
+  </div>
+
+</div>

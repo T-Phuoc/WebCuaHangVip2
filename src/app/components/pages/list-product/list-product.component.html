@@ -1,0 +1,7 @@
+<h1>Sản CMNR nó phẩm!</h1>
+
+<div id="prod-container">
+  @for (product of this.storeService.products; track $index) {
+    <app-product-card [product]="product"></app-product-card>
+  }
+</div>

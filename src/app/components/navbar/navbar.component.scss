@@ -1,0 +1,80 @@
+#container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.right-navbar{
+  width: 15%;
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  justify-content: flex-end;
+
+}
+
+.left-navbar {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Thay đổi con trỏ thành con trỏ */
+  transition: font-size 0.2s; /* Chuyển đổi mượt mà cho kích thước phông chữ */
+}
+
+.logo:hover {
+  font-size: 27px; /* Tăng kích thước phông chữ khi di chuột */
+}
+
+#button-menu, #button-login {
+  display: flex;
+  align-items: center;
+}
+
+#avata-user{
+  display: flex;
+  align-items: center;
+  cursor: pointer; /* Thay đổi con trỏ thành con trỏ */
+  transition: font-size 0.2s; /* Chuyển đổi mượt mà cho kích thước phông chữ */
+}
+
+#avata-user:hover {
+  transform: scale(1.1);
+}
+
+button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s;
+  margin-left: 10px;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
